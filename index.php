@@ -4,7 +4,7 @@
     
     <!-- Meta Data -->
     <meta charset="utf-8" />
-    <meta name="description" content="User Input, with JavaScript">
+    <meta name="description" content="User Input, with PHP">
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Grace S" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,7 +68,7 @@
           <td class="border">Single: $3.75 each <br> 6-Pack: $20.00 <br> 12-Pack: $36.00</td>
         </tr>
         <tr>
-          <td class="border">Old-Fasioned Doughnut</td>
+          <td class="border">Old-Fashioned Doughnut</td>
           <td class="border">Single: $3.75 each <br> 6-Pack: $20.00 <br> 12-Pack: $36.00</td>
         </tr>
         <tr>
@@ -134,7 +134,7 @@
             <option value="Vanilla">Vanilla Doughnut</option>
             <option value="Chocolate">Chocolate Doughnut</option>
             <option value="Maple Bacon">Maple Bacon Doughnut</option>
-            <option value="Old-Fashioned">Old-Fasioned Doughnut</option>
+            <option value="Old-Fashioned">Old-Fashioned Doughnut</option>
             <option value="Cinnamon Twist">Cinnamon Twist Doughnut</option>
             <option value="Apple Fritter">Apple Fritter</option>
             <option value="Sour Cream">Sour Cream Doughnut</option>
