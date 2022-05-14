@@ -215,6 +215,16 @@
                 <br>
                 <br>
 
+                <!-- Dropdown Menu for Sides -->
+                <label for="sides2">Sides:</label>
+                  <select name="sides2" id="sides2">
+						        <option value="">--Sides--</option>
+						        <option value="Mini2">Mini Doughnuts</option>
+						        <option value="Fruit2">Fruit Salad</option>
+                </select>
+                <br>
+                <br>
+
                   <!-- Table for Drink Choice -->
                   <table class="center">
                     <tr>
@@ -284,7 +294,8 @@
         $topping3 = $_POST['topping3'];
         $topping4 = $_POST['topping4'];
         $drink = $_POST['drink'];
-        $sides= $_POST['sides'];
+        $sides = $_POST['sides'];
+        $sides2 = $_POST['sides2'];
         
         // Initializing Variables
         $sizeCost = 0;
@@ -294,6 +305,7 @@
         $toppingCost3 = 0;
         $toppingCost4 = 0;
         $sidesCost = 0;
+        $sidesCost2 = 0;
         
         // IF statement for size
         if ($size == "small")  {
@@ -344,6 +356,17 @@
         else {
           $sidesCost = 0;
         }
+
+        // IF statement for Sides
+        if ($sides2 == "Mini2")  {
+          $sidesCost2 = MINI_COST;
+        }
+        else if ($sides2 == "Fruit2") {
+          $sidesCost2 = FRUIT_COST;
+        }
+        else {
+          $sidesCost2 = 0;
+        }
         
         // IF statement for Drinks
         if ($drink == "pepsi" || $drink == "Fresca") {
@@ -357,7 +380,7 @@
           }
 
           // Calculates Subtotal, Tax and Total 
-          $subtotal = $sizeCost + $toppingCost + $drinkCost + $sidesCost + $toppingCost2 + $toppingCost3 + $toppingCost4;
+          $subtotal = $sizeCost + $toppingCost + $drinkCost + $sidesCost + $toppingCost2 + $toppingCost3 + $toppingCost4 + $sidesCost2;
           $tax = $subtotal * HST;
           $total = $subtotal + $tax;
 
